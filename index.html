@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-      {TBD: name} Community Group Charter
+      Web Thing Protocol Community Group Charter
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -28,83 +28,64 @@
     </style>
   </head>
   <body>
-    <p class="remove">
-      {TBD: This is a draft template that Community or Business Groups MAY
-      choose to use for their Group Charter. You may edit your charter to
-      remove or change the text provided here. Community Groups SHOULD have
-      charters as a way to build shared understanding within a group about
-      activities, and to attract new participants who appreciate a clear
-      description of the group's scope and deliverables.}
-    </p>
-    <p class="remove">
-      {TBD: The charter sections below include notes (marked with ï¿½{TBDï¿½) on
-      what to include and recommended text. Please remember to remove the notes
-      in your specific charter.}
-    </p>
     <h1>
-      [DRAFT] <span class="remove">{TBD: name}</span> Community Group Charter
+      [DRAFT] Web Thing Protocol Community Group Charter
     </h1>
     <p>
-      <span class="remove">{TBD: remove next sentence before submitting for
-      approval}</span> This Charter is work in progress. To submit feedback,
-      please use <span class="remove">{TBD:GitHub repository URL}</span> Issues
-      where Charter is being developed.
+      This Charter is work in progress. To submit feedback, please use <a href="https://github.com/benfrancis/web-thing-protocol-charter/issues">GitHub issues</a>.
     </p>
     <ul>
-      <li>This Charter: <span class="remove">{TBD: URI}</span>
+      <li>This Charter: <a href="https://benfrancis.github.io/web-thing-protocol-charter">https://benfrancis.github.io/web-thing-protocol-charter</a>
       </li>
-      <li>Previous Charter: <span class="remove">{TBD: URI}</span>
+      <li>Previous Charter: n/a
       </li>
-      <li>Start Date: <span class="remove">{TBD: date the charter takes effect,
-      estimate if not known. Update this if the charter is revised and include
-      a link to the previous version of the charter.}</span>
+      <li>Start Date: 2019-08-01
       </li>
-      <li>Last Modifed: <span class="remove">{TBD: If the system does not
-      automatically provide information about the date of the last
-      modification, it can be useful to include that in the charter.}</span>
+      <li>Last Modifed: 2019-06-27
       </li>
     </ul>
-    <h2 id="goals">
-      Goals
+    <h2 id="mission">
+      Mission
     </h2>
     <p>
-      <span class="remove">{TBD: describe the mission and goals of the
-      Community Group. This should be a brief description describing the reason
-      the group has been formed.}</span>
+      The mission of this group is to define a common protocol for communicating with connected devices over the web.
     </p>
-    <h2 id="scope-of-work">
-      Scope of Work
+
+    <h2 id="scope">
+      Scope
     </h2>
-    <p class="remove">
-      {TBD: Describe topics that are in scope. For specifications that the CLA
-      patent section applies to, it is helpful to describe the scope in a way
-      that it is clear what types of technologies will be defined in
-      specifications, as opposed to adoption by reference or underlying
-      technology not defined in the proposed spec. Key use cases are often
-      helpful in describing scope. If no specifications will be defined in the
-      group that the CLA patent section applies to, the charter should clearly
-      state that. A clear scope is particularly important where patent
-      licensing obligations may apply.}
-    </p>
+      <p>Deliverables of the group may include use cases, requirements and specifications. This includes:</p>
+      <ol>
+        <li>Definition of a WebSocket sub-protocol for the Web of Things, using the W3C “Web of Things (WoT) Thing Description” <a href="https://www.w3.org/TR/wot-thing-description/#sec-vocabulary-definition">data model</a> and <a href="https://www.w3.org/TR/wot-thing-description/#form">operations</a></li>
+        <li>Definition of an HTTP protocol binding for the Web of Things
+          <br /><i>(or support of the Web of Things Working Group in defining this protocol binding and ensuring consistency with the WebSocket sub-protocol where appropriate)</i></li>
+        <li>Evaluation of other potential Web of Things protocol bindings (e.g. CoAP)</li>
+      </ol>
+      <p>Key use cases include:</p>
+      <ol>
+        <li>Web of Things gateways which expose the Web Thing Protocol to allow clients to monitor and control connected devices over the web (where the devices themselves may communicate with the gateway using other underlying protocols)</li>
+        <li>Web of Things devices which directly expose the Web Thing Protocol</li>
+        <li>Web of Things clients which discover, monitor and control connected devices using the Web Thing Protocol</li>
+      </ol>
+    </h2>
     <h3 id="out-of-scope">
       Out of Scope
     </h3>
-    <p class="remove">
-      {TBD: Identify topics known in advance to be out of scope}
-    </p>
+    <p>Protocol bindings for non-web or non-internet protocols.</p>
     <h2 id="deliverables">
       Deliverables
     </h2>
     <h3 id="specifications">
       Specifications
     </h3>
-    <p class="remove">
-      {TBD: Provide a brief description of each specification the group plans
-      to produce. Where an estimate is possible, it can be useful to provide an
-      estimated schedule for key deliverables. As described below, the group
-      may later modify the charter deliverables. if no specifications, include:
-      "No Specifications will be produced under the current charter."}
-    </p>
+      <ul>
+      </li>Web Thing Protocol Specification, including:
+        <ul>
+          <li>A WebSocket sub-protocol for the Web of Things</li>
+          <li>An HTTP protocol binding for the Web of Things
+            <br /><i>(or reference to an HTTP protocol binding in the <a href="https://www.w3.org/TR/wot-thing-description">Web of Things (WoT) Thing Description</a> specification.)</i></li>
+        </ul>
+      </ul>
     <h3 id="non-normative-reports">
       Non-Normative Reports
     </h3>
@@ -116,12 +97,6 @@
     <h3 id="test-suites">
       Test Suites and Other Software
     </h3>
-    <p class="remove">
-      {TBD: If there are no plans to create a test suite or other software,
-      please state that and remove the following paragraph. If Github is not
-      being used, then indicate where the license information is. If GitHub is
-      being used link to your LICENSE.md file in the next paragraph.}
-    </p>
     <p>
       The group MAY produce test suites to support the Specifications. Please
       see the GitHub LICENSE file for test suite contribution licensing
@@ -130,10 +105,12 @@
     <h2 id="liaisons">
       Dependencies or Liaisons
     </h2>
-    <p class="remove">
-      {TBD: List any significant dependencies on other groups (inside or
-      outside W3C) or materials. }
-    </p>
+    <ul>
+      <li><strong><a href="https://www.w3.org/WoT/IG/">W3C Web of Things Interest Group<a/></strong> - to collaborate on use cases and requirements</li>
+      <li><strong><a href="https://www.w3.org/WoT/WG/">W3C Web of Things Working Group<a/></strong> - to collaborate on an HTTP protocol binding and discovery mechanisms and ensure any specifications complement or extend the <a href="https://www.w3.org/TR/wot-thing-description">Web of Things (WoT) Thing Description</a> specification</li>
+      <li><strong><a href="https://www.w3.org/community/httpslocal/">W3C HTTPS in Local Network Community Group</a></strong> - to share IoT use cases for and explore potential solutions to using HTTPS on local networks
+      <li><strong><a href="https://datatracker.ietf.org/wg/httpbis/documents/">IETF Hypertext Transfer Protocol Working Group</a></strong> - to contribute IoT use cases and requirements for future version of the HTTP protocol
+    </ul>
     <h2 id="process">
       Community and Business Group Process
     </h2>
@@ -185,11 +162,6 @@
       "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">
       W3C Software and Document License</a>. All other documents produced by
       the group should use that License where possible.
-    </p>
-    <p class="remove">
-      {TBD: if CG doesn't use GitHub replace the remaining paragraphs in this
-      section with: "All Contributions are made on the groups public mail list
-      or public contrib list"}
     </p>
     <p>
       Community Group participants agree to make all contributions in the
